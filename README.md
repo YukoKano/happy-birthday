@@ -6,5 +6,8 @@
 
 |最初|入力後|
 |--|--|
-|<img width="587" alt="image" src="https://github.com/YukoKano/happy-birthday/assets/38373129/55414441-0c1e-4788-b2eb-f89f63ae81b3">|<img width="583" alt="image" src="https://github.com/YukoKano/happy-birthday/assets/38373129/0e87f987-672e-4ee8-b1a2-cb4388885f8e">|
+|<img width="585" alt="image" src="https://github.com/YukoKano/happy-birthday/assets/38373129/df47da94-6eec-4a6b-b0c3-0d3513be37c9">|<img width="587" alt="image" src="https://github.com/YukoKano/happy-birthday/assets/38373129/2110420f-ce5d-4db1-b616-1b643c166bb7">|
 
+## GitHub Pages 参考
+
+https://qiita.com/tat_mae084/items/745761eee6cd1d42949d
