@@ -11,3 +11,5 @@
 ## GitHub Pages 参考
 
 https://qiita.com/tat_mae084/items/745761eee6cd1d42949d
+
+※背景画像があるとCSSのbuildがうまくいかなかったため削除しました
