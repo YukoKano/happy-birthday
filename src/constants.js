@@ -1,0 +1,1 @@
+export const collectNumbers = ['2', '2', '4', '0'];
