@@ -20,7 +20,7 @@ export default function App() {
       <div className='contents'>
         <label>最終問題の答えをここに入力してね</label>
         <Boxes numbers={numbers} setNumbers={setNumbers} setText={setText} />
-        <Button inputNumbers={numbers} setIsCollect={setIsCollect} setText={setText} />
+        <Button numbers={numbers} setIsCollect={setIsCollect} setText={setText} />
         <p>{ text }</p>
       </div>
     );

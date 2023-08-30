@@ -1,7 +1,6 @@
 import { Box } from './Box';
 
 export function Boxes({ numbers, setNumbers, setText }) {
-
   function handleClick(i, value) {
     const nextNumbers = [...numbers];
     nextNumbers[i] = value;
@@ -9,7 +8,7 @@ export function Boxes({ numbers, setNumbers, setText }) {
     setText("");
   }
 
-  const boxesArray = [0, 1, 2, 3];
+  const boxesArray = [0, 1, 2, 3]; // ここ本当にあってる？
 
   return (
     <div className='boxes'>

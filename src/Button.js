@@ -1,9 +1,8 @@
 import { collectNumbers } from "./constants";
 
-export function Button({ inputNumbers, setIsCollect, setText }) {
+export function Button({ numbers, setIsCollect, setText }) {
   function click() {
-    // console.log(inputNumbers);
-    if (inputNumbers.toString() === collectNumbers.toString()) {
+    if (numbers.toString() === collectNumbers.toString()) {
       setIsCollect(true);
     } else {
       setIsCollect(false);
