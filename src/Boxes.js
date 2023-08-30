@@ -1,23 +1,22 @@
 import { Box } from './Box';
 
-export function Boxes({ numbers, setNumbers, setIsNumbersChanged }) {
+export function Boxes({ numbers, setNumbers, setText }) {
 
   function handleClick(i, value) {
     const nextNumbers = [...numbers];
     nextNumbers[i] = value;
     setNumbers(nextNumbers);
-    setIsNumbersChanged(true);
+    setText("");
   }
 
-  const boxesArray = Array(4);
+  const boxesArray = [0, 1, 2, 3];
 
   return (
     <div className='boxes'>
-      {boxesArray.map((index) => {
-          return (
-            <Box value={numbers[index]} onBoxChange={(event) => handleClick(index, event.target.value)}/> // 動かなくなっちゃった＞＜
-          )
-        }
+      {boxesArray.map((myKey) => {
+        return (
+          <Box value={numbers[myKey]} onBoxChange={(event) => handleClick(myKey, event.target.value)} key={myKey.toString()}/> // keyを渡さないといけない？
+        )}
       )}
     </div>
   )

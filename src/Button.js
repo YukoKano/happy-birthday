@@ -1,11 +1,13 @@
 import { collectNumbers } from "./constants";
 
-export function Button({ inputNumbers, setIsFinished, setIsCollect }) {
+export function Button({ inputNumbers, setIsCollect, setText }) {
   function click() {
+    // console.log(inputNumbers);
     if (inputNumbers.toString() === collectNumbers.toString()) {
-      setIsFinished(true);
+      setIsCollect(true);
     } else {
       setIsCollect(false);
+      setText("答えが間違っているよ");
     }
   }
   return (
