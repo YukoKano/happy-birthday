@@ -8,15 +8,13 @@ export function Boxes({ numbers, setNumbers, setText }) {
     setText("");
   }
 
-  const boxesArray = [0, 1, 2, 3]; // ここ本当にあってる？
+  const boxesArray = Array(4).fill(null);
 
   return (
     <div className='boxes'>
-      {boxesArray.map((myKey) => {
-        return (
-          <Box value={numbers[myKey]} onBoxChange={(event) => handleClick(myKey, event.target.value)} key={myKey.toString()}/> // keyを渡さないといけない？
-        )}
-      )}
+      {boxesArray.map((_, index) =>(
+        <Box value={numbers[index]} onBoxChange={(event) => handleClick(index, event.target.value)} key={index}/> // keyを渡す必要がある
+      ))}
     </div>
   )
 }
